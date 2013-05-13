@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<ModulePrefs title="DivArtman">
+		<Require feature="setprefs"/>
+	</ModulePrefs>
+	<UserPref name="queries" datatype="hidden" default_value=""/>
+	<UserPref name="url" datatype="string" display_name="サーブレットURL" required="true" default_value="http://localhost:8080/context/servlet"/>
+	<UserPref name="quantity" datatype="string" display_name="表示件数(半角数字)" default_value="10"/>
+	<Content type="html">
+	<![CDATA[
+		<!-- body -->
+		<select id="select_box">
+			<option class="default" value="-1">----- クエリ名 -----</option>
+		</select>
+		<button id="execute">実行</button>
+		<button id="query_manage">クエリ管理</button>
+		<div id="query_text"></div>
+		<div id="result_table"></div>
+		
+		<!-- stylesheet -->
+		<link type="text/css" href="__IS_GADGET_BASE_URL__/css/lib/myui/myui.css" rel="stylesheet">
+		<link type="text/css" href="__IS_GADGET_BASE_URL__/css/lib/myui/ToolTip.css" rel="stylesheet">
+		<link type="text/css" href="__IS_GADGET_BASE_URL__/css/lib/myui/TextField.css" rel="stylesheet">
+		<link type="text/css" href="__IS_GADGET_BASE_URL__/css/lib/myui/DatePicker.css" rel="stylesheet">
+		<link type="text/css" href="__IS_GADGET_BASE_URL__/css/lib/myui/TableGrid.css" rel="stylesheet">
+		<link type="text/css" href="__IS_GADGET_BASE_URL__/css/lib/myui/Autocompleter.css" rel="stylesheet">
+		<link type="text/css" href="__IS_GADGET_BASE_URL__/css/divartman.css" rel="stylesheet">
+
+		<!-- JavaScript -->
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/prototype.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/scriptaculous/scriptaculous.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/scriptaculous/builder.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/scriptaculous/effects.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/scriptaculous/dragdrop.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/scriptaculous/controls.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/scriptaculous/slider.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/scriptaculous/sound.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/myui.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/Utilities.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/i18n.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/ToolTip.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/TextField.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/Date.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/DatePicker.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/TableGrid.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/KeyTable.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/controls.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/Autocompleter.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/myui/ComboBox.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/livepipeui/livepipe.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/livepipeui/resizable.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/lib/livepipeui/window.js"></script>
+		<script type="text/javascript" src="__IS_GADGET_BASE_URL__/js/divartman.js"></script>
+		<script type="text/javascript">
+			var baseURL = "__IS_GADGET_BASE_URL__";
+		</script>
+	]]>
+	</Content>
+</Module>
