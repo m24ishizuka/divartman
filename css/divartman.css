@@ -1,35 +1,21 @@
-#select_box {
-	margin: 5px;
-}
-
-#query_text {
-	background-color: LightSteelBlue;
-	color: White;
-	font-size: 0.8em;
-	padding: 5px;
-	margin: 5px;
-	width: 100%;
-	font-size: 0.8em;
-	width: 100%;
-}
-
-#result_table {
-	margin: 5px;
-	width: 100%;
-	height: 330px;
+.modal {
+	width: 80%;
+	height: 80%;
+	background-color: white;
 }
 
 #control_overlay {
-	background-color: Black;
+	background-color: black;
 }
 
-#query_table {
-	width: 100%;
-	height: 310px;
+.table {
+	display: table;
 }
 
-.query_manage_modal {
-	background-color: White;
-	width: 500px;
-	height: 430px;
+.row {
+	display: table-row;
+}
+
+.cell {
+	display: table-cell;
 }
